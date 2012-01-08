@@ -14,7 +14,7 @@
 # scripts):
 #%# family=manual
 #%# capabilities=autoconf
-PHPPROCESSES = ${phpprocesses-"php5-fpm"}
+PHPPROCESSES=${phpprocesses-"php5-fpm"}
 
 if [ "$1" = "autoconf" ]; then
 echo yes
