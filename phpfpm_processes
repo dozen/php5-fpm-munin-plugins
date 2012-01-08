@@ -14,8 +14,7 @@
 # scripts):
 #%# family=manual
 #%# capabilities=autoconf
-
-PHP_BIN=${phpbin-"php5-fpm"}
+PHPPROCESSES = ${phpprocesses-"php5-fpm"}
 
 if [ "$1" = "autoconf" ]; then
 echo yes
@@ -35,4 +34,4 @@ exit 0
 fi
 
 echo -n "php_processes.value "
-pgrep $PHP_BIN | wc -l
+pgrep $phpprocesses | wc -l
