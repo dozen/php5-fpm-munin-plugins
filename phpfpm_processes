@@ -34,4 +34,4 @@ exit 0
 fi
 
 echo -n "php_processes.value "
-pgrep $PHPPROCESSES | wc -l
+ps awwwux | grep $PHPPROCESSES | grep -v grep | wc -l
